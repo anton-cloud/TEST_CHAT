@@ -9,6 +9,7 @@
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
+      width: 0 !important;
       display: none;
     }
 
@@ -27,4 +28,8 @@
       flex: 1 1 auto;
     }
   }
+}
+
+.message__list::-webkit-scrollbar {
+  display: none;
 }
