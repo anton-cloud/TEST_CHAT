@@ -1,0 +1,21 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+
+  &__input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0 20px;
+    outline: none;
+    margin-bottom: 10px;
+
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../../sass/utils/_colors.scss";
+
+.chatItem {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: map-get($colors, primary);
+  border-bottom: 2px solid map-get($colors, accent);
+  cursor: pointer;
+
+  &:hover {
+    background-color: map-get($colors, accent);
+  }
+
+  &:last-child {
+    border: none;
+  }
+
+  &__text {
+    width: 100%;
+    margin-left: 10px;
+
+    p {
+      margin: 2px;
+      font-size: 14px;
+      color: black;
+    }
+
+    p:last-child {
+      color: map-get($colors, secondary);
+    }
+  }
+
+  &__info {
+    height: 60px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  &__time {
+    color: map-get($colors, secondary);
+    font-size: 12px;
+    margin: 0;
+  }
+
+  @media (max-width: 1024px) {
+    .message-time {
+      font-size: 8px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../sass/utils/_colors.scss";
+
+.emptyChat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: map-get($colors, primary);
+    color: map-get($colors, secondary);
+    margin: 0;
+  }
+}

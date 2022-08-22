@@ -1,0 +1,23 @@
+@import "../../sass/utils/_colors.scss";
+
+.chat {
+  &__input-wrapper {
+    background-color: map-get($colors, accent);
+    border-top: 2px solid map-get($colors, accent-line);
+    padding: 20px 0;
+    height: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__container {
+    width: 100%;
+    min-width: 65vw;
+    // height: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

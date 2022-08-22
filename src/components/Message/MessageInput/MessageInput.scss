@@ -1,0 +1,32 @@
+@import "../../../sass/utils/_colors.scss";
+
+.message {
+  &__inputContainer {
+    height: 40px;
+    background-color: map-get($colors, primary);
+    border: 2px solid map-get($colors, accent);
+    border-radius: 30px;
+    margin: auto 20px auto 20px;
+  }
+
+  &__form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 20px;
+  }
+
+  &__button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      height: 20px;
+      width: 20px;
+      fill: map-get($colors, secondary);
+    }
+  }
+}

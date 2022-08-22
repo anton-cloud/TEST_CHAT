@@ -1,0 +1,30 @@
+.message {
+  &__list {
+    width: auto;
+    height: 80vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    :nth-child(odd) {
+      justify-content: flex-end;
+    }
+    & > div {
+      margin-bottom: 20px;
+    }
+
+    & > li:last-child {
+      margin: 0;
+    }
+
+    &__helper {
+      flex: 1 1 auto;
+    }
+  }
+}

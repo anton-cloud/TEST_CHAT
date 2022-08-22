@@ -1,0 +1,16 @@
+@import "../../../sass/utils/_colors.scss";
+
+.inputField {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  margin-right: 10px;
+
+  &::placeholder {
+    color: map-get($colors, secondary);
+  }
+  &:focus {
+    outline: none;
+  }
+}

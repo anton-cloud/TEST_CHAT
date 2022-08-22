@@ -1,0 +1,20 @@
+.auth {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  &__container {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  }
+}

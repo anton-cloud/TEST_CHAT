@@ -1,0 +1,20 @@
+@import "../../../sass/utils/_colors.scss";
+
+.loginButton {
+  width: 80%;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: map-get($colors, secondary);
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s linear;
+
+  &:hover {
+    background-color: map-get($colors, accent-line);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+}
